@@ -1,0 +1,14 @@
+Topics: DOM Manipulation, DOm event, html, css styling, event bubbling
+Task: Build a Tic-Tac-Toe
+
+Task:
+    - User Story
+        - As a user, I want to click on one of the squares and it should give either X or O depending on who's turn it is.
+        - As a user, I want to click on square after X has played, and it should show O.
+        - As a user, I want to know whether or not I won or lost, or if it is a draw.
+
+    - Write HTML Element
+        - Build grid with 9 + 1 <div>
+
+    - Write css
+        - Style divs to make them look like a grid
