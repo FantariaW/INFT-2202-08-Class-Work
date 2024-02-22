@@ -1,0 +1,101 @@
+<!-- 
+  Name: Jiabao Wu
+  ID: 100753779
+  Date: 2024/02/05
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <script type = "text/javascript" defer src="./scripts/app.js"></script>
+     <link rel="stylesheet" href="./style/style.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" src="./node_modules/font-awesome/css/font-awesome.min.css"/>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <script
+     src="https://code.jquery.com/jquery-3.7.1.min.js"
+     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+     crossorigin="anonymous"
+   ></script>
+
+     <title>Lab 2</title>
+   </head>
+     
+   <!-- fixed top navbar -->
+   <body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="#">Login Page</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       
+         <!-- fixed top navbar -->
+         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class="navbar-nav ms-auto ">
+             <li class="nav-item">
+               <div style="cursor: pointer;"><a class="nav-link mx-2 active" aria-current="page" onclick="home()"><i class="fa fa-home"></i> Home</a></div>
+             </li>
+             <li class="nav-item">
+               <div style="cursor: pointer;"><a class="nav-link mx-2" onclick="product()"><i class="fa fa-th"></i> Products</a></div>
+             </li>
+             <li class="nav-item">
+               <div style="cursor: pointer;"><a class="nav-link mx-2" onclick="services()"><i class="fa fa-bell"></i> Services</a></div>
+             </li>
+             <li class="nav-item">
+               <div style="cursor: pointer;"><a class="nav-link mx-2" onclick="about()"><i class="fa fa-info-circle"></i> About Us</a></div>
+             </li>
+             <li class="nav-item">
+               <div style="cursor: pointer;"><a class="nav-link mx-2" onclick="contact()"><i class="fa fa-phone"></i> Contact Us</a></div>
+             </li>
+             <li class="nav-item">
+                <div style="cursor: pointer;"><a class="nav-link mx-2" onclick="login()"><i class="fa fa-sign-in"></i> Login</a></div>
+              </li>
+              <li class="nav-item">
+                <div style="cursor: pointer;"><a class="nav-link mx-2" onclick="register()"><i class="fa fa-sign-out"></i> Register Now</a></div>
+              </li>
+           </ul>
+         </div>
+       </div>
+       </nav>
+       
+       <header>lab2</header>
+       <!-- page text -->
+       <div class = "login_form">
+        <!-- Title -->
+        <div id="login_title"><p>Login</p></div>
+
+        <!-- Name input -->
+        <div>
+            <div id="usericon_box"><i class="fa fa-user-o"  style="color: white;" id="user_icon"></i></div>
+            <input id="user_input" class="user_input" name="userid" type="text" placeholder="First Name Only"/>
+        </div>
+        <!-- Password input -->
+        <div>
+            <div id="pwdicon_box"><i class="fa fa-lock" style="color: white;" id="pwd_icon"></i></div>
+            <input id="pwd_input" class="pwd_input" type="password"/>
+        </div>
+        <!-- Login button -->
+        <div>
+            <input class="login" type="button" name="login" id="login" value="Login"/>
+        </div>        
+       </div>
+
+       <!-- Go to register page -->
+       <div class="go_register">
+        <div>Don't have an account?<a href="register.html">Register Here!</a></div>
+    </div>
+ 
+       <audio autoplay>
+         <source src ="" type = ""/>
+       </audio>
+       <!-- fixed bottom navbar -->
+       <nav class="navbar fixed-bottom navbar-dark bg-dark p-3">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#"><p id = "date"></p></a>
+         </div>
+       </nav>
+   </body>
+ </html>

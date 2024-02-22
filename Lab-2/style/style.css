@@ -1,0 +1,345 @@
+.head{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+}
+body{
+    background: url("../img/background.jpg") center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+/* ----------------------------------------------------------------------------------- */
+.title, .hello{
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+/* .hello span {
+    font-size: 60px;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.3s * var(--i))
+}
+@keyframes flip {
+    0%,80% {
+    transform: rotateY(360deg) 
+    }
+} */
+
+.hello {
+  -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 70px;
+}
+.hello span {
+  display: inline-block;
+  text-transform: uppercase;
+  animation: hello 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+@keyframes hello {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.container{
+    color: white;
+    font: 2.5em 'tahoma';
+    font-size: 25px;
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    background-color: gray;
+    background-color: rgba(0,0,0,0.4);
+    height:75%;
+    width:50%;
+    border: 2px solid white;
+    border-radius:6px;
+    box-shadow:0 6px 30px 0;
+}
+.containerSub{
+    text-align: center;
+    font-size: 50px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.avatar, .book{
+    text-align: right;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* Contact Page */
+#fstName{
+  color: white;
+  opacity: 1;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 40%;
+}
+#lstName{
+  color: white;
+  opacity: 1;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 40%;
+}
+#Email{
+  color: white;
+  opacity: 1;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 40%;
+}
+#Num{
+  color: white;
+  opacity: 1;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 40%;
+}
+#update_id{
+  color: white;
+  opacity: 1;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  right: 15%;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* Lab 2 Login Page */
+/* Login Page */
+.login_form{
+  background-color: gray;
+	background-color: rgba(0,0,0,0.5);
+  border: 2px solid white;
+  border-radius:6px;
+  box-shadow: 0 6px 30px 0;
+  width: 500px;
+  height: 330px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#login_title{
+  position: absolute;
+  top: 3%;
+  left: 8%;
+  color:White;
+  font-size: 60px;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Login Page */
+/* input box and login button */
+.user_input{
+  font-size: medium;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  /* Outline & border hide inputbox */
+  outline: none;
+  border: none;
+  height:40px;
+  width:365px;
+  position: absolute;
+  top: 35%;
+  right: 46px;
+}
+.pwd_input{
+  font-size: medium;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  outline: none;
+  border: none;
+  height:40px;
+  width: 365px;
+  position: absolute;
+  top: 54%;
+  right: 46px;
+}
+/* Login button */
+.login{
+  font-size: medium;
+  color: white;
+  background-color: gray;
+	background-color: rgba(0,0,0,0.3);
+	border: 1px solid white;
+	border-radius:3px;
+	height:50px;
+	width:90px;
+	margin: 0;
+	position: absolute;
+	top: 72%;
+	right: 46px;
+}
+/* Font awesome style */
+#usericon_box{
+  background-color: rgba(0,0,0,0);
+  border: 1px solid white;
+  border-radius:3px;
+  height:40px;
+  width:410px;
+  font-size: x-large;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  top: 35.1%;
+  left: 43px;
+}
+#user_icon{
+  position: absolute;
+  top: 21%;
+  left: 12.5px;
+}
+#pwdicon_box{
+  background-color: rgba(0,0,0,0);
+  border: 1px solid white;
+  border-radius:3px;
+  height:40px;
+  width:410px;
+  font-size: x-large;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  top: 54.1%;
+  left: 43px;
+}
+#pwd_icon{
+  position: absolute;
+  top: 21%;
+  left: 15px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Go to register page / Back to login page */
+.go_register{
+  font-size: x-large;
+  color: White;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.go_login{
+  font-size: x-large;
+  color: White;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* Register Page */
+.register_form{
+  background-color: gray;
+	background-color: rgba(0,0,0,0.5);
+  border: 2px solid white;
+  border-radius:6px;
+  box-shadow: 0 6px 30px 0;
+  width: 500px;
+  height: 430px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#register_title{
+  position: absolute;
+  top: 3%;
+  left: 8%;
+  color:White;
+  font-size: 60px;
+}
+
+/* Register page input box */
+.first_name{
+  font-size: medium;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid white;
+  border-radius:3px;
+  height:40px;
+  width:190px;
+  position: absolute;
+  top: 25%;
+  left: 43px;
+}
+.last_name{
+  font-size: medium;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid white;
+  border-radius:3px;
+  height:40px;
+  width:190px;
+  position: absolute;
+  top: 25%;
+  right: 46px;
+}
+.email{
+  font-size: medium;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid white;
+  border-radius:3px;
+  height:40px;
+  width: 407px;
+  position: absolute;
+  top: 40%;
+  left: 43px;
+}
+.password{
+  font-size: medium;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid white;
+  border-radius:3px;
+  height:40px;
+  width: 407px;
+  position: absolute;
+  top: 55%;
+  left: 43px;
+}
+.password_confirm{
+  font-size: medium;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid white;
+  border-radius:3px;
+  height:40px;
+  width: 407px;
+  position: absolute;
+  top: 70%;
+  left: 43px;
+}
+
+/* Register button */
+#register{
+  font-size: medium;
+  color: white;
+  background-color: gray;
+	background-color: rgba(0,0,0,0.3);
+	border: 1px solid white;
+	border-radius:3px;
+	height:50px;
+	width:90px;
+	margin: 0;
+	position: absolute;
+	top: 85%;
+	right: 46px;
+}
