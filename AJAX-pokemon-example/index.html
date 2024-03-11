@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+    <title>Pokemon API Example</title>
+  </head>
+  <body>
+    <h1>Pokemon API Example</h1>
+    <button id="loadPokemon">Load Pokemon</button>
+    <ul id="pokemonList"></ul>
+
+    <br>
+    <div>Enter Pokemon ID or Name</div>
+    <div><input type="text" id="Input" placeholder="Enter Pokemon ID / Name"></div><br>
+    <div><button onclick="search()" id="search">Search Pokemon</button></div>
+
+    <br>
+    <div><ul id="Output"></ul></div>
+    
+
+    <script>
+    // -------------------------------------------------------------------------------------------------------------
+    // search();
+    async function search(){
+      try{
+        const pName = document.getElementById("Input").value.toLowerCase();
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pName}`)
+        
+        if(!response.ok){
+          throw new Error("Error to find");
+        }
+        const data = await response.json();
+        console.log(data);
+      }
+      catch(error){
+        console.error(error);
+        alert("Can't find this Pokemon, Please recheck the pokemon Name/ID, or search for other Pokemon.")
+      }
+    }
+
+    document.getElementById("search").addEventListener("click", async function () {
+      // Fetch the list of pokemons
+      try {
+      const pName = document.getElementById("Input").value.toLowerCase();
+      let Output = await fetch(
+        // URL: for ICE -> Store user input in variable called pokemonName
+        // `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
+
+        `https://pokeapi.co/api/v2/pokemon/${pName}`
+      ); // By Default, it sends a GET HTTP Request
+
+      // Output the results with Async Await function
+      var pString = "";
+      var jsonResults = await Output.json();
+      //debugger;
+        pString += `<div>
+          <p>Pokemon ID: ${jsonResults.id}</p>
+          <p>Pokemon Name: ${jsonResults.name}</p>
+          <p><img src= "${jsonResults.sprites.front_default}"/></p>
+          </div>`;
+      // });
+      document.getElementById("Output").innerHTML = pString;
+    } catch (err) {
+      console.log(err);
+    }
+  });
+
+    // let userinput  = document.getElementById("Input");
+    // console.log(userinput.value)
+    
+    // document.getElementById("search").addEventListener("click", async () => {console.log(Input.value);
+    //   let pokemonName = Input.value;
+
+    //   let pokemonDetails = await fetch (`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+    //   let pokemon = await pokemonDetails.json();
+    //   console.log(pokemon);
+    // });
+
+    </script>
+
+  </body>
+</html>
